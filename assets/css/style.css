@@ -127,7 +127,7 @@ section p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000000;
+    background-color: #2a2a2a;
     color: rgb(255, 255, 255);
     padding: 0 5%;
     gap: 10px; /* Add a small consistent gap between all flex items */

@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ===== SCROLL ANIMATIONS =====
     // Elements to animate on scroll
-    const animateElements = document.querySelectorAll('.service-card, .contact-card, .about-us-image, .about-us-text');
+    const animateElements = document.querySelectorAll('.service-card, .contact-card, .about-us-image, .about-us-text, .sdg-card');
     
     // Observer options
     const observerOptions = {

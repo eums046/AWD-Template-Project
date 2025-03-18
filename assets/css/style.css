@@ -573,6 +573,149 @@ section p {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
+/* Why This Works Section */
+.why-it-works {
+    background-color: #f7f9f7;
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why-it-works h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #8B9F81;
+    position: relative;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.why-it-works h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #8B9F81;
+}
+
+.sdg-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sdg-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sdg-intro p {
+    font-size: 20px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.sdg-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.sdg-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(139, 159, 129, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sdg-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(139, 159, 129, 0.2);
+}
+
+.sdg-icon {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sdg-card h3 {
+    font-size: 20px;
+    color: #8B9F81;
+    margin-bottom: 15px;
+}
+
+.sdg-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.vision-statement {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    border-top: 2px solid rgba(139, 159, 129, 0.2);
+    border-bottom: 2px solid rgba(139, 159, 129, 0.2);
+}
+
+.vision-statement p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 24px !important;
+    font-weight: 500;
+    color: #8B9F81 !important;
+    margin-top: 30px;
+}
+
+.cta-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #8B9F81;
+    color: white;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #7a8c72;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(139, 159, 129, 0.3);
+}
+
+/* Make this section part of the scroll animations */
+.why-it-works .sdg-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.why-it-works .sdg-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Footer */
 footer {
     background-color: #333;

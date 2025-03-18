@@ -130,7 +130,6 @@ section p {
     background-color: #2a2a2a;
     color: rgb(255, 255, 255);
     padding: 0 5%;
-    gap: 10px; /* Add a small consistent gap between all flex items */
 }
 
 .home-content {
@@ -141,15 +140,15 @@ section p {
 }
 
 .home h1 {
-    font-size: 56px;
+    font-size: 65px;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: left;
     margin-bottom: 25px;
+    margin-right: -250px;
 }
 
 .download-btn {
-    display: inline-block;
     background-color: #8B9F81;
     color: white;
     font-weight: 600;
@@ -160,6 +159,7 @@ section p {
     font-size: 16px;
     transition: all 0.3s ease;
     margin-top: 10px;
+    margin-right: -500px;
 }
 
 .download-btn:hover {
@@ -173,29 +173,18 @@ section p {
 
 .phone {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    margin-right: -150px; /* Add negative margin to pull elements closer */
+    width: 40%; /* Increased width for better proportion */
+    margin-left: -1000px; /* Less negative margin so it's closer but not overlapping too much */
+    position: relative; /* Added positioning context */
+    z-index: 1; /* Ensure proper layering */
 }
 
 .phone img {
-    max-width: 90%;
+    max-width: 500px; /* Slightly reduced max-width */
     height: auto;
 }
 
-.ars {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    margin-left: -150px; /* Add negative margin to pull elements closer */
-}
-
-.ars img {
-    max-width: 60%;
-    height: auto;
-}
+/* About section */
 
 /* Alternate section colors */
 .about-us {
@@ -547,7 +536,7 @@ section p {
 .contact-form textarea:focus {
     outline: none;
     border-color: #8B9F81;
-    box-shadow: 0 0 0 2px rgba(0, 175, 96, 0.2);
+    box-shadow: 0 0 0 2px rgba(139, 159, 129, 0.2); /* Updated to use #8B9F81 with transparency */
 }
 
 .submit-btn {
@@ -566,9 +555,9 @@ section p {
 }
 
 .submit-btn:hover {
-    background-color: #8B9F81;
+    background-color: #7a8c72; /* Slightly darker shade of #8B9F81 for better hover effect */
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 175, 96, 0.3);
+    box-shadow: 0 6px 15px rgba(139, 159, 129, 0.3); /* Updated to use #8B9F81 with transparency */
 }
 
 .submit-btn:active {

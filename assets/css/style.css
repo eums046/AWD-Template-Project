@@ -25,9 +25,10 @@ a {
     text-decoration: none;
 }
 
+
 header {
     background: linear-gradient(to right, rgb(34, 38, 33) 0%, rgb(54, 66, 54) 50%, rgb(71, 85, 68) 100%);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); 
     position: sticky;
     top: 0;
     z-index: 100;
@@ -37,7 +38,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    background-image: url('path_to_header_texture.png'); 
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
+
 
 .logo {
     width: 250px;
@@ -45,18 +50,28 @@ header {
     overflow: hidden;
     display: flex;
     align-items: center;
-    margin-left: 10px; /* Add some left margin for spacing */
+    margin-left: 10px;
+    position: relative; 
 }
 
 .logo img {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    object-position: center; /* Keep it centered for proper cropping */
+    object-position: center; 
+    transition: transform 0.3s ease; 
+}
+
+
+.logo:hover img {
+    transform: scale(1.1); 
 }
 
 nav {
     padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 nav ul {
@@ -70,11 +85,13 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
     text-transform: uppercase;
     position: relative;
     padding-bottom: 3px;
+    display: inline-block; 
 }
+
 nav ul li a::after {
     content: '';
     position: absolute;
@@ -83,7 +100,7 @@ nav ul li a::after {
     bottom: 0;
     left: 0;
     background-color: var(--header-link-color);
-    transition: width 0.3s;
+    transition: width 0.3s, background-color 0.3s;
 }
 
 nav ul li a:hover::after {
@@ -92,7 +109,27 @@ nav ul li a:hover::after {
 
 nav ul li a:hover {
     color: #e2f4ea;
+    transform: scale(1.05); 
 }
+
+
+header:hover {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+.logo img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a {
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.2s ease;
+}
+
+nav ul li a:hover {
+    letter-spacing: 2px; 
+}
+
 main {
     margin-top: 0;
 }

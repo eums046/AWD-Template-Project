@@ -100,7 +100,7 @@ main {
 section h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #2c9c69;
+    color: #8B9F81;
     position: relative;
     padding-bottom: 15px;
 }
@@ -112,7 +112,7 @@ section h2::after {
     left: 0;
     width: 60px;
     height: 4px;
-    background-color: #2c9c69;
+    background-color: #8B9F81;
 }
 
 section p {
@@ -150,7 +150,7 @@ section p {
 
 .download-btn {
     display: inline-block;
-    background-color: #00af60;
+    background-color: #8B9F81;
     color: white;
     font-weight: 600;
     padding: 15px 30px;
@@ -163,9 +163,8 @@ section p {
 }
 
 .download-btn:hover {
-    background-color: #008c4d;
+    background-color: #8B9F81;
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 175, 96, 0.5);
 }
 
 .download-btn:active {
@@ -210,7 +209,7 @@ section p {
 .about-us h2 {
     font-size: 42px;
     margin-bottom: 40px;
-    color: #00af60;
+    color: #8B9F81;
     position: relative;
     padding-bottom: 15px;
     text-align: center;
@@ -224,7 +223,7 @@ section p {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: #00af60;
+    background-color: #8B9F81;
 }
 
 .about-us-content {
@@ -247,7 +246,7 @@ section p {
 }
 
 .about-us-text p strong {
-    color: #00af60;
+    color: #8B9F81;
     font-weight: 600;
 }
 
@@ -274,7 +273,7 @@ section p {
 .services h2 {
     font-size: 42px;
     margin-bottom: 15px;
-    color: #00af60;
+    color: #8B9F81;
     position: relative;
     padding-bottom: 15px;
     display: inline-block;
@@ -288,7 +287,7 @@ section p {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: #00af60;
+    background-color: #8B9F81;
 }
 
 .services-intro {
@@ -350,7 +349,7 @@ section p {
 }
 
 .learn-more {
-    color: #00af60;
+    color: #8B9F81;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 14px;
@@ -368,12 +367,12 @@ section p {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #00af60;
+    background-color: #8B9F81;
     transition: width 0.3s ease;
 }
 
 .learn-more:hover {
-    color: #008c4d;
+    color: #8B9F81;
 }
 
 .learn-more:hover::after {
@@ -390,7 +389,7 @@ section p {
 .contact h2 {
     font-size: 42px;
     margin-bottom: 15px;
-    color: #00af60;
+    color: #8B9F81;
     position: relative;
     padding-bottom: 15px;
     display: inline-block;
@@ -404,7 +403,7 @@ section p {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background-color: #00af60;
+    background-color: #8B9F81;
 }
 
 .contact-intro {
@@ -547,12 +546,12 @@ section p {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #00af60;
+    border-color: #8B9F81;
     box-shadow: 0 0 0 2px rgba(0, 175, 96, 0.2);
 }
 
 .submit-btn {
-    background-color: #00af60;
+    background-color: #8B9F81;
     color: white;
     font-weight: 600;
     padding: 12px 25px;
@@ -567,7 +566,7 @@ section p {
 }
 
 .submit-btn:hover {
-    background-color: #008c4d;
+    background-color: #8B9F81;
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0, 175, 96, 0.3);
 }

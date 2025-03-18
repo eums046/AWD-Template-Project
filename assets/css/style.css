@@ -507,6 +507,7 @@ section p {
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
 }
 
 .contact-form h3 {
@@ -564,13 +565,54 @@ section p {
     transform: translateY(1px);
 }
 
+/* Map container and location info styling */
 .map-container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto 0;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.location-info {
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 15px rgba(139, 159, 129, 0.1);
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.location-info h3 {
+    color: #8B9F81;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.location-info p {
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location-info p:last-child {
+    margin-bottom: 0;
 }
 
 /* Why This Works Section */
@@ -724,6 +766,33 @@ footer {
     text-align: center;
 }
 
+.location-info {
+    padding: 25px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 15px rgba(139, 159, 129, 0.1);
+    margin-top: -10px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.location-info h3 {
+    color: #8B9F81;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.location-info p {
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.location-info p:last-child {
+    margin-bottom: 0;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     header {
@@ -786,5 +855,13 @@ footer {
     
     .contact-card {
         min-width: 100%;
+    }
+
+    .location-info {
+        padding: 20px 15px;
+    }
+    
+    .location-info h3 {
+        font-size: 20px;
     }
 }

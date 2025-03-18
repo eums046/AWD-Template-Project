@@ -11,8 +11,7 @@
 - 🕶️ **AR Navigation** – Uses Google AR to guide users to drop-off points.  
 - 🎁 **Reward System** – Earn points for recycling and redeem them for vouchers or discounts.  
 - 🏆 **Leaderboard System** – Track progress and compete with others.  
-- 🛍️ **Upcycled Product Marketplace** – Buy and sell upcycled products.  
-- 📚 **Educational Hub** – Learn about proper waste management and sustainability.  
+- 🛍️ **Upcycled Product Marketplace** – Buy and sell upcycled products.   
 
 ## Why Ecoloop?  
 

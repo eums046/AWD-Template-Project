@@ -129,7 +129,7 @@ section p {
     justify-content: space-between;
     background-image: url(../img/image.png);
     background-size: cover;
-    background-position: center bottom; /* Changed to bottom to show more of the lower part of the image */
+    background-position: center;
     background-repeat: no-repeat;
     color: rgb(255, 255, 255);
     padding: 0 5%;
@@ -192,24 +192,24 @@ section p {
     transform: translateY(1px);
 }
 
-/* Fix the phone positioning to work with absolute positioning */
+
 .phone {
     display: flex;
-    width: 40%; /* Increased width for better proportion */
-    right: 5%; /* Use right instead of margin-left for absolute positioning */
-    bottom: 0; /* Position at the bottom */
-    position: absolute; /* Keep consistent with the position property above */
-    z-index: 2; /* Make sure it's above the overlay */
+    width: 40%; 
+    right: 5%; 
+    bottom: 0; 
+    position: absolute; 
+    z-index: 2; 
 }
 
 .phone img {
-    max-width: 500px; /* Slightly reduced max-width */
+    max-width: 500px;
     height: auto;
 }
 
 /* About section */
 
-/* Alternate section colors */
+
 .about-us {
     background-color: white;
     padding: 80px 5%;

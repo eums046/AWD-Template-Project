@@ -149,7 +149,7 @@ section p {
 
 /* Make sure content appears above the overlay */
 .home-content, .phone {
-    position: absolute; /* Fixed spelling mistake: absoloute -> absolute */
+    position: relative; /* Changed from absolute to relative */
     z-index: 2;
 }
 
@@ -166,7 +166,7 @@ section p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: left;
     margin-bottom: 25px;
-    margin-right: -250px;
+    /* Removed margin-right: -250px; which was causing overflow */
 }
 
 .download-btn {
@@ -180,7 +180,7 @@ section p {
     font-size: 16px;
     transition: all 0.3s ease;
     margin-top: 10px;
-    margin-right: -500px;
+    /* Removed margin-right: -500px; which was causing overflow */
 }
 
 .download-btn:hover {

@@ -127,9 +127,30 @@ section p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right, rgb(34, 38, 33) 0%, rgb(54, 66, 54) 50%, rgb(71, 85, 68) 100%);
+    background-image: url(../img/image.png);
+    background-size: cover;
+    background-position: center bottom; /* Changed to bottom to show more of the lower part of the image */
+    background-repeat: no-repeat;
     color: rgb(255, 255, 255);
     padding: 0 5%;
+    position: relative;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Darkens the image for better text visibility */
+    z-index: 1;
+}
+
+/* Make sure content appears above the overlay */
+.home-content, .phone {
+    position: absolute; /* Fixed spelling mistake: absoloute -> absolute */
+    z-index: 2;
 }
 
 .home-content {
@@ -171,12 +192,14 @@ section p {
     transform: translateY(1px);
 }
 
+/* Fix the phone positioning to work with absolute positioning */
 .phone {
     display: flex;
     width: 40%; /* Increased width for better proportion */
-    margin-left: -1000px; /* Less negative margin so it's closer but not overlapping too much */
-    position: relative; /* Added positioning context */
-    z-index: 1; /* Ensure proper layering */
+    right: 5%; /* Use right instead of margin-left for absolute positioning */
+    bottom: 0; /* Position at the bottom */
+    position: absolute; /* Keep consistent with the position property above */
+    z-index: 2; /* Make sure it's above the overlay */
 }
 
 .phone img {
@@ -533,7 +556,7 @@ section p {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-form input:focus,
+contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
     border-color: #8B9F81;

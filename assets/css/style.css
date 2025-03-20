@@ -218,13 +218,18 @@ section p {
     align-items: center;
 }
 
-.about-us h2 {
-    font-size: 42px;
-    margin-bottom: 40px;
-    color: #8B9F81;
+.about-us h3 {
+    font-size: 20px;
+    color: #4c4b4b;
     position: relative;
     padding-bottom: 15px;
     text-align: center;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
 }
 
 .about-us h2::after {
